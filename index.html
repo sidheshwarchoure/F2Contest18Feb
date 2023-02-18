@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidheshwar Choure Frontend2 contest2 18 Feb 2023</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Library Management system</h1>
+    <form>
+    <div>
+        <label for="bookName">Book Name</label>
+        <input type="text" id="bookName">
+    </div>
+    <div>
+        <label for="issuedto">Issued To</label>
+        <input type="text" id="issuedto">
+    </div>
+    <div>
+        <button type="button" id="button" onclick="issueBook()">Issue Book</button>
+    </div>
+    </form>
+    </div>
+    <table id="show">
+     <tr>
+       <thead>
+        <th>ID</th>
+        <th>Book Name</th>
+        <th>Issued To</th>
+        <th>Issue Date and Time</th>
+        <th>Status</th>
+    </thead>
+    <tbody id="show">
+
+    </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
