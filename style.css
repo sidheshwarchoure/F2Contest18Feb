@@ -1,65 +1,79 @@
-*{
-    margin: auto;
-    background: black;
+body {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
 }
 
-.container{
-    display: block;
-    margin: 0 auto;
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
+    gap: 32px;
 }
 
-.container h1{
-    font-size: 48px;
-    color: #FFFFFF;
-    margin-bottom: 37px;
-    margin-top: 40px;
+.form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.container input{
-    width: 49%;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    padding: 10px;
-    color: #FFFFFF;
+input {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 70%;
+    height: 40px;
 }
 
-.container label{
-    font-size: 24px;
-    color: #FFFFFF;
+button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 24px;
+    width: 100%;
 }
 
-#issuedto{
-    margin: 0px 35px;
+.input-box {
+    display: flex;
+    justify-content: space-between;
 }
 
-#bookName{
-   margin: 13px 12px;
+table {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    border: 1px solid #ffffff;
 }
 
-#button{
-    background: #FFFFFF;
-    margin-top: 30px;
-    padding: 10px 290px;
+thead tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ffffff;
 }
 
- th,td{
-    border: 1px solid #FFFFFF;
+tbody tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
-table{
-    border: 1px solid #FFFFFF;
-    width: 95%;
-    border-collapse: collapse;
-    margin-left: 20px;
-    margin-top: 35px;
-    color: #FFFFFF;
-}
-
-.status::before {
-    color: green;
-    }
-    .status::after {
+.red {
     color: red;
-    }
+}
+
+.flex {
+    display: flex;
+    gap: 10px
+}
+
+.flex button {
+    width: 120px;
+}
+
+.green {
+    color: green;
+}

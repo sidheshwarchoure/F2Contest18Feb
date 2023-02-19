@@ -7,36 +7,47 @@
     <title>Sidheshwar Choure Frontend2 contest2 18 Feb 2023</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-    <h1>Library Management system</h1>
-    <form>
-    <div>
-        <label for="bookName">Book Name</label>
-        <input type="text" id="bookName">
+<div class="container">
+    <div class="form">
+        <h3>Library Management system</h3>
+        <div class="input-box">
+            <div>Book Name</div>
+            <input type="text" id="book-name" >
+        </div>
+        <div class="input-box">
+            <div>Issued To </div>
+            <input type="text" id="issue-to">
+        </div>
+        <button id="btn">Issue Book</button>
     </div>
-    <div>
-        <label for="issuedto">Issued To</label>
-        <input type="text" id="issuedto">
+    <div class="table" id="books">
+        <table>
+          <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Book Name
+                </th>
+                <th>
+                    Issued To
+                </th>
+                <th>
+                    Issue Date and Time
+                </th>
+                <th>
+                    Status
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+                <td>table row 1</td>
+            </tr> -->
+          </tbody>
+        </table>
     </div>
-    <div>
-        <button type="button" id="button" onclick="issueBook()">Issue Book</button>
-    </div>
-    </form>
-    </div>
-    <table id="show">
-     <tr>
-       <thead>
-        <th>ID</th>
-        <th>Book Name</th>
-        <th>Issued To</th>
-        <th>Issue Date and Time</th>
-        <th>Status</th>
-    </thead>
-    <tbody id="show">
-
-    </tbody>
-    </table>
-    <script src="index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </div>
 </html>
